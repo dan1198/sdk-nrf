@@ -64,7 +64,7 @@ if (CONFIG_SETTINGS_FCB OR CONFIG_SETTINGS_NVS)
   ncs_add_partition_manager_config(pm.yml.settings)
 endif()
 
-if (CONFIG_FILE_SYSTEM_LITTLEFS)
+if (CONFIG_FILE_SYSTEM_LITTLEFS && CONFIG_FS_LITTLEFS_FMP_DEV)
   ncs_add_partition_manager_config(pm.yml.file_system)
 endif()
 
